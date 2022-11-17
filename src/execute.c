@@ -452,6 +452,8 @@ shell_execute (const char *command, int flags)
 void
 toggle_subshell (void)
 {
+    tty_cursor(1);
+
     static gboolean message_flag = TRUE;
 
 #ifdef ENABLE_SUBSHELL

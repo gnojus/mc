@@ -130,6 +130,7 @@ tty_check_term (gboolean force_xterm)
         || strncmp (termvalue, "foot", 4) == 0
         || strncmp (termvalue, "screen", 6) == 0
         || strncmp (termvalue, "tmux", 4) == 0
+	|| strncmp (termvalue, "st-", 3) == 0
         || strncmp (termvalue, "contour", 7) == 0;
     /* *INDENT-ON* */
 }
