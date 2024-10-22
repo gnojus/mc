@@ -854,7 +854,9 @@ setup_mc (void)
 #endif /* HAVE_CHARSET */
 #endif /* HAVE_SLANG */
 
-    if ((tty_baudrate () > 0 && tty_baudrate () < 9600) || mc_global.tty.slow_terminal)
+    int baudrate;
+    baudrate = tty_baudrate ();
+    if ((baudrate > 0 && baudrate < 9600) || mc_global.tty.slow_terminal)
         verbose = FALSE;
 }
 
