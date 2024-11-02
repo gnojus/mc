@@ -179,7 +179,7 @@ gboolean file_op_compute_totals = TRUE;
 /* If true use the internal viewer */
 gboolean use_internal_view = TRUE;
 /* If set, use the builtin editor */
-gboolean use_internal_edit = TRUE;
+gboolean use_internal_edit = FALSE;
 
 #ifdef HAVE_CHARSET
 /* Numbers of (file I/O) and (input/display) codepages. -1 if not selected */
